@@ -74,7 +74,7 @@
                 </h1>
 
                 <p class="hero-subtitle">
-                    Arte <span>✦</span> Gastronomía <span>✦</span> Historia
+                    Arte <span>✦</span> Historia
                 </p>
 
                 <div class="hero-buttons">
@@ -222,8 +222,8 @@
                         Doris Ortiz Artesanias
                     </option>
 
-                    <option value="oriundo">
-                        Restaurante Oriundo, Cocina de Mamá
+                    <option value="koaj">
+                        KOAJ CALLE 12 CENTRO
                     </option>
 
                 </select>
@@ -483,16 +483,15 @@
 
 
             <!-- ==================================================
-                 RESTAURANTE ORIUNDO - COCINA DE MAMÁ
+                 KOAJ CALLE 12 CENTRO
             =================================================== -->
 
-            <div class="business-card" id="oriundo-business">
+            <div class="business-card" id="koaj-business">
 
                 <div class="business-information">
 
                     <h3>
-                        Restaurante Oriundo,
-                        Cocina de Mamá
+                        KOAJ CALLE 12 CENTRO
                     </h3>
 
                     <h4>
@@ -500,11 +499,19 @@
                     </h4>
 
                     <p>
-                        Oriundo - Cocina de Mamá es un restaurante colombiano
-                        que nació con la idea de rescatar y rendir homenaje
-                        a las recetas tradicionales y caseras de distintas
-                        regiones del país, adaptándolas a un formato práctico
-                        y moderno: los bowls o tazones.
+                        Somos una empresa multinacional del sector textil y
+                        retail con una sólida presencia en Colombia, Costa Rica
+                        y Ecuador, así como en importantes centros de producción
+                        en China, Bangladesh e India.
+                    </p>
+
+                    <p>
+                        Nuestra red global nos permite llevar la moda a diversos
+                        rincones del mundo, mientras que en Colombia, con Bogotá
+                        como centro de operaciones, generamos más de 9.000
+                        empleos directos y más de 750 indirectos a través de
+                        compras locales, franquicias y consignatarios,
+                        contribuyendo al desarrollo del país.
                     </p>
 
 
@@ -518,13 +525,11 @@
 
                         <ul class="product-list">
 
-                            <li>Bowls</li>
+                            <li>Ropa</li>
 
-                            <li>Combos</li>
+                            <li>Tenis</li>
 
-                            <li>Hamburguesas</li>
-
-                            <li>Muchos productos más</li>
+                            <li>Accesorios</li>
 
                         </ul>
 
@@ -536,7 +541,7 @@
                     <div class="official-business">
 
                         <a
-                            href="https://www.oriundococina.com/"
+                            href="https://www.koaj.co/"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="official-button">
@@ -559,8 +564,7 @@
                         </h4>
 
                         <p>
-                            Restaurante Oriundo, Cocina de Mamá -
-                            La Candelaria, Bogotá
+                            KOAJ CALLE 12 CENTRO - La Candelaria, Bogotá
                         </p>
 
                     </div>
@@ -568,12 +572,12 @@
                 </div>
 
 
-                <!-- ================= MAPA ORIUNDO ================= -->
+                <!-- ================= MAPA KOAJ ================= -->
 
                 <div class="business-map">
 
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.988592073774!2d-74.07340254868768!3d4.596065877425848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99939e032729%3A0x9dba2fae1494db47!2sOriundo%2C%20Cocina%20de%20Mam%C3%A1!5e0!3m2!1ses!2sco!4v1790238085288!5m2!1ses!2sco"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6422.5248161349755!2d-74.07823420200762!3d4.603093377470339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd0fc1a959%3A0x93bb679feabc110!2sKOAJ%20CALLE%2012%20CENTRO!5e0!3m2!1ses!2sco!4v1790273933181!5m2!1ses!2sco"
                         width="100%"
                         height="400"
                         style="border:0;"
@@ -736,8 +740,8 @@
         const dorisBusiness =
             document.getElementById("doris-business");
 
-        const oriundoBusiness =
-            document.getElementById("oriundo-business");
+        const koajBusiness =
+            document.getElementById("koaj-business");
 
 
         businessSelect.addEventListener("change", function () {
@@ -748,7 +752,7 @@
 
                 dorisBusiness.style.display = "none";
 
-                oriundoBusiness.style.display = "none";
+                koajBusiness.style.display = "none";
 
             }
 
@@ -758,17 +762,17 @@
 
                 dorisBusiness.style.display = "grid";
 
-                oriundoBusiness.style.display = "none";
+                koajBusiness.style.display = "none";
 
             }
 
-            else if (this.value === "oriundo") {
+            else if (this.value === "koaj") {
 
                 dgnBusiness.style.display = "none";
 
                 dorisBusiness.style.display = "none";
 
-                oriundoBusiness.style.display = "grid";
+                koajBusiness.style.display = "grid";
 
             }
 
@@ -781,7 +785,7 @@
 
         dorisBusiness.style.display = "none";
 
-        oriundoBusiness.style.display = "none";
+        koajBusiness.style.display = "none";
 
     </script>
 
