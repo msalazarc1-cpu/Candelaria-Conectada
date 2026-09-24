@@ -24,6 +24,7 @@ a {
 }
 
 
+
 /* =========================================
    HEADER
 ========================================= */
@@ -98,6 +99,7 @@ a {
 .nav-links a:hover {
     color: #d6b36a;
 }
+
 
 
 /* =========================================
@@ -186,6 +188,7 @@ a {
 }
 
 
+
 /* =========================================
    BOTONES HERO
 ========================================= */
@@ -225,6 +228,7 @@ a {
 }
 
 
+
 /* =========================================
    ETIQUETAS
 ========================================= */
@@ -240,6 +244,7 @@ a {
 
     margin-bottom: 18px;
 }
+
 
 
 /* =========================================
@@ -279,6 +284,7 @@ a {
 
     margin-bottom: 22px;
 }
+
 
 
 /* =========================================
@@ -343,9 +349,10 @@ a {
 }
 
 
-/* ==================================================
-   NEGOCIOS Y EMPRENDIMIENTOS
-================================================== */
+
+/* =========================================
+   NEGOCIOS
+========================================= */
 
 .businesses {
     background-color: #f5f0e6;
@@ -382,8 +389,9 @@ a {
 }
 
 
+
 /* =========================================
-   SELECTOR DE NEGOCIOS
+   SELECTOR
 ========================================= */
 
 .business-selector {
@@ -446,6 +454,7 @@ a {
 }
 
 
+
 /* =========================================
    TARJETA DEL NEGOCIO
 ========================================= */
@@ -490,8 +499,9 @@ a {
 }
 
 
+
 /* =========================================
-   INFORMACIÓN DEL NEGOCIO
+   INFORMACIÓN NEGOCIO
 ========================================= */
 
 .business-information {
@@ -529,6 +539,7 @@ a {
 }
 
 
+
 /* =========================================
    PRODUCTOS
 ========================================= */
@@ -544,7 +555,8 @@ a {
 .product-list {
     display: grid;
 
-    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    grid-template-columns:
+        repeat(2, minmax(140px, 1fr));
 
     gap: 12px 30px;
 
@@ -564,6 +576,7 @@ a {
 .product-list li::marker {
     color: #b18a43;
 }
+
 
 
 /* =========================================
@@ -621,6 +634,7 @@ a {
 }
 
 
+
 /* =========================================
    UBICACIÓN
 ========================================= */
@@ -642,6 +656,7 @@ a {
 .business-location p {
     margin-bottom: 0;
 }
+
 
 
 /* =========================================
@@ -672,171 +687,173 @@ a {
 }
 
 
-/* =========================================
-   CONTACTO
-========================================= */
 
-.contact {
+/* ==================================================
+   REGISTRO
+================================================== */
+
+.registration-section {
     background-color: #31572f;
 
-    min-height: 665px;
-
-    padding: 100px 8%;
+    padding: 120px 7%;
 
     color: white;
 }
 
-.contact-content {
-    max-width: 1100px;
+.registration-container {
+    max-width: 1150px;
 
     margin: auto;
-}
 
-.contact-star {
-    color: #d6b36a;
-
-    font-size: 35px;
-
-    margin-bottom: 10px;
-}
-
-.contact .section-label {
-    color: #d6b36a;
-}
-
-.contact h2 {
-    font-size: clamp(45px, 6vw, 80px);
-
-    line-height: 1;
-
-    margin-bottom: 25px;
-}
-
-.contact-intro {
-    max-width: 700px;
-
-    font-size: 16px;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 50px;
-}
-
-
-/* =========================================
-   FORMULARIO
-========================================= */
-
-.contact-form {
-    width: 100%;
-}
-
-.form-row {
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 480px;
 
-    gap: 35px;
+    gap: 80px;
 
-    margin-bottom: 35px;
+    align-items: center;
 }
 
-.form-group {
-    display: flex;
-
-    flex-direction: column;
+.registration-intro .section-label {
+    color: #d6b36a;
 }
 
-.form-group label {
-    margin-bottom: 10px;
+.registration-intro h2 {
+    font-size: clamp(48px, 6vw, 82px);
 
-    font-size: 14px;
+    line-height: 0.95;
 
-    font-weight: bold;
+    margin-bottom: 30px;
 }
 
-.form-group input,
-.form-group select {
-    width: 100%;
+.registration-intro > p:last-child {
+    max-width: 600px;
 
-    height: 52px;
+    font-size: 18px;
 
-    padding: 0 15px;
-
-    border: none;
-
-    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
-
-    background: transparent;
-
-    color: white;
-
-    outline: none;
-
-    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.form-group input:focus,
-.form-group select:focus {
-    border-bottom-color: #d6b36a;
-}
-
-.form-group select option {
-    color: #222;
-}
 
 
 /* =========================================
-   TELÉFONO
+   TARJETA REGISTRO
 ========================================= */
 
-.phone-input {
+.registration-card {
+    background-color: white;
+
+    color: #29452b;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.20);
+}
+
+.registration-icon {
+    width: 50px;
+
+    height: 50px;
+
     display: flex;
 
     align-items: center;
 
-    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    justify-content: center;
+
+    background-color: #f5f0e6;
+
+    color: #b18a43;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
 }
 
-.phone-input input {
-    border-bottom: none;
+.registration-card h3 {
+    font-size: 30px;
+
+    margin-bottom: 8px;
 }
 
-.phone-input select {
-    width: 80px;
+.registration-description {
+    color: #697067;
 
-    border-bottom: none;
+    font-size: 14px;
 
-    padding: 0 5px;
+    margin-bottom: 30px;
 }
 
-.country-icon {
-    font-size: 18px;
-
-    margin-right: 10px;
-}
 
 
 /* =========================================
-   BOTÓN ENVIAR
+   CAMPOS REGISTRO
 ========================================= */
 
-.button-group {
-    justify-content: flex-end;
+.form-field {
+    margin-bottom: 20px;
 }
 
-.send-button {
-    width: 180px;
+.form-field label {
+    display: block;
+
+    color: #29452b;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.form-field input {
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    background-color: #fafafa;
+
+    color: #29452b;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.form-field input:focus {
+    border-color: #b18a43;
+
+    background-color: white;
+
+    box-shadow:
+        0 0 0 3px rgba(177, 138, 67, 0.10);
+}
+
+.register-button {
+    width: 100%;
 
     height: 55px;
 
-    border: 1px solid white;
+    border: none;
 
-    border-radius: 3px;
+    border-radius: 6px;
 
-    background: white;
+    background-color: #31572f;
 
-    color: #31572f;
+    color: white;
 
     font-size: 15px;
 
@@ -844,16 +861,588 @@ a {
 
     cursor: pointer;
 
-    transition: all 0.3s ease;
+    transition: 0.3s;
+
+    margin-top: 10px;
 }
 
-.send-button:hover {
-    background-color: transparent;
+.register-button span {
+    margin-left: 8px;
+
+    font-size: 18px;
+}
+
+.register-button:hover {
+    background-color: #d6b36a;
+
+    color: #29452b;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* ==================================================
+   PANEL PERSONAL
+================================================== */
+
+.personal-panel {
+    display: none;
+
+    background-color: #f5f0e6;
+
+    padding: 100px 6%;
+}
+
+.panel-container {
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+
+/* =========================================
+   ENCABEZADO PANEL
+========================================= */
+
+.panel-header {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 45px;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #d9d4c9;
+}
+
+.panel-welcome .section-label {
+    margin-bottom: 10px;
+}
+
+.panel-welcome h2 {
+    color: #29452b;
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    line-height: 0.95;
+
+    margin-bottom: 15px;
+}
+
+.panel-welcome p:last-child {
+    color: #697067;
+
+    font-size: 16px;
+
+    max-width: 700px;
+}
+
+.logout-button {
+    padding: 13px 22px;
+
+    border: 1px solid #31572f;
+
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: #31572f;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    white-space: nowrap;
+}
+
+.logout-button:hover {
+    background-color: #31572f;
+
+    color: white;
+}
+
+
+
+/* =========================================
+   ESTRUCTURA PERFIL
+========================================= */
+
+.profile-layout {
+    display: grid;
+
+    grid-template-columns: 290px 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+
+/* =========================================
+   RESUMEN DEL PERFIL
+========================================= */
+
+.profile-summary {
+    background-color: #29452b;
 
     color: white;
 
-    transform: translateY(-3px);
+    border-radius: 18px;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    position: sticky;
+
+    top: 110px;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.12);
 }
+
+.profile-avatar {
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #d6b36a;
+
+    color: #29452b;
+
+    font-size: 40px;
+
+    font-weight: bold;
+}
+
+.profile-summary h3 {
+    font-size: 24px;
+
+    line-height: 1.15;
+
+    margin-bottom: 8px;
+
+    word-break: break-word;
+}
+
+.profile-summary > p {
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+
+    word-break: break-word;
+}
+
+.profile-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, 0.10);
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 12px;
+}
+
+.status-dot {
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background-color: #d6b36a;
+}
+
+
+
+/* ==================================================
+   EDITOR DEL PERFIL
+================================================== */
+
+.profile-editor {
+    background-color: white;
+
+    border-radius: 20px;
+
+    padding: 45px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.editor-header {
+    padding-bottom: 25px;
+
+    margin-bottom: 5px;
+
+    border-bottom: 1px solid #e6e2da;
+}
+
+.editor-label {
+    color: #b18a43;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+.editor-header h3 {
+    color: #29452b;
+
+    font-size: 32px;
+
+    line-height: 1.1;
+}
+
+
+
+/* =========================================
+   SECCIONES EDITOR
+========================================= */
+
+.editor-section {
+    padding: 32px 0;
+
+    border-bottom: 1px solid #e6e2da;
+}
+
+.editor-section-title {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: flex-start;
+
+    margin-bottom: 22px;
+}
+
+.editor-number {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    background-color: #f5f0e6;
+
+    color: #b18a43;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+.editor-section-title h4 {
+    color: #29452b;
+
+    font-size: 19px;
+
+    margin-bottom: 3px;
+}
+
+.editor-section-title p {
+    color: #7a8078;
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+
+/* ==================================================
+   ÁREA DE SUBIDA
+================================================== */
+
+.upload-area {
+    min-height: 155px;
+
+    border: 2px dashed #d6b36a;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    background-color: #fcfaf5;
+
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    background-color: #f5f0e6;
+
+    border-color: #31572f;
+
+    transform: translateY(-2px);
+}
+
+.upload-icon {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #31572f;
+
+    color: white;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.upload-area strong {
+    color: #29452b;
+
+    font-size: 15px;
+}
+
+.upload-area span {
+    color: #7a8078;
+
+    font-size: 12px;
+
+    margin-top: 4px;
+}
+
+
+
+/* ==================================================
+   PREVISUALIZACIÓN FOTOS
+================================================== */
+
+.image-preview {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.preview-card {
+    height: 145px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background-color: #eee;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.preview-card img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.remove-image {
+    position: absolute;
+
+    top: 8px;
+
+    right: 8px;
+
+    width: 30px;
+
+    height: 30px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: rgba(30, 53, 31, 0.85);
+
+    color: white;
+
+    font-size: 20px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.remove-image:hover {
+    background-color: #d6b36a;
+
+    color: #29452b;
+}
+
+
+
+/* ==================================================
+   CAMPOS PANEL
+================================================== */
+
+.profile-editor textarea {
+    width: 100%;
+
+    padding: 16px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    resize: vertical;
+
+    background-color: #fafafa;
+
+    color: #29452b;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.profile-editor textarea:focus {
+    border-color: #b18a43;
+
+    background-color: white;
+
+    box-shadow:
+        0 0 0 3px rgba(177, 138, 67, 0.10);
+}
+
+
+
+/* ==================================================
+   ACCIONES PANEL
+================================================== */
+
+.editor-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding-top: 30px;
+}
+
+.save-profile-button {
+    padding: 15px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #31572f;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.save-profile-button span {
+    margin-left: 8px;
+
+    font-size: 16px;
+}
+
+.save-profile-button:hover {
+    background-color: #d6b36a;
+
+    color: #29452b;
+
+    transform: translateY(-2px);
+}
+
+#save-message {
+    color: #31572f;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
 
 
 /* =========================================
@@ -873,8 +1462,9 @@ footer {
 }
 
 
+
 /* =========================================
-   RESPONSIVE - TABLET
+   RESPONSIVE TABLET
 ========================================= */
 
 @media (max-width: 1100px) {
@@ -897,11 +1487,22 @@ footer {
         gap: 30px;
     }
 
+    .registration-container {
+        grid-template-columns: 1fr 420px;
+
+        gap: 40px;
+    }
+
+    .profile-layout {
+        grid-template-columns: 240px 1fr;
+    }
+
 }
 
 
+
 /* =========================================
-   RESPONSIVE - TABLET PEQUEÑA
+   RESPONSIVE TABLET PEQUEÑA
 ========================================= */
 
 @media (max-width: 900px) {
@@ -934,11 +1535,71 @@ footer {
         min-height: 400px;
     }
 
+    .registration-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .registration-card {
+        max-width: 600px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-summary {
+        position: relative;
+
+        top: auto;
+
+        display: grid;
+
+        grid-template-columns: auto 1fr auto;
+
+        align-items: center;
+
+        gap: 20px;
+
+        text-align: left;
+
+        padding: 25px;
+    }
+
+    .profile-avatar {
+        margin: 0;
+
+        width: 70px;
+
+        height: 70px;
+
+        font-size: 30px;
+    }
+
+    .profile-summary h3 {
+        margin: 0;
+    }
+
+    .profile-summary > p {
+        margin: 5px 0 0;
+    }
+
+    .profile-status {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+    }
+
 }
 
 
+
 /* =========================================
-   RESPONSIVE - CELULAR
+   RESPONSIVE CELULAR
 ========================================= */
 
 @media (max-width: 768px) {
@@ -1025,29 +1686,67 @@ footer {
         min-height: 350px;
     }
 
-    .contact {
+    .registration-section {
         padding: 80px 7%;
     }
 
-    .form-row {
-        grid-template-columns: 1fr;
-
-        gap: 25px;
+    .registration-card {
+        padding: 30px 25px;
     }
 
-    .button-group {
-        justify-content: flex-start;
+    .personal-panel {
+        padding: 80px 5%;
     }
 
-    .send-button {
+    .panel-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .logout-button {
+        width: 100%;
+    }
+
+    .profile-editor {
+        padding: 30px 25px;
+    }
+
+    .profile-summary {
+        grid-template-columns: auto 1fr;
+
+        padding: 25px;
+    }
+
+    .profile-status {
+        grid-column: 1 / -1;
+
+        grid-row: auto;
+
+        justify-self: start;
+    }
+
+    .image-preview {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .editor-actions {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    .save-profile-button {
         width: 100%;
     }
 
 }
 
 
+
 /* =========================================
-   RESPONSIVE - CELULAR PEQUEÑO
+   RESPONSIVE CELULAR PEQUEÑO
 ========================================= */
 
 @media (max-width: 480px) {
@@ -1086,6 +1785,38 @@ footer {
 
     .official-button {
         padding: 14px 18px;
+    }
+
+    .registration-card {
+        padding: 25px 20px;
+    }
+
+    .profile-editor {
+        padding: 25px 18px;
+    }
+
+    .profile-summary {
+        padding: 22px 18px;
+    }
+
+    .profile-avatar {
+        width: 60px;
+
+        height: 60px;
+
+        font-size: 26px;
+    }
+
+    .profile-summary h3 {
+        font-size: 20px;
+    }
+
+    .image-preview {
+        grid-template-columns: 1fr;
+    }
+
+    .preview-card {
+        height: 190px;
     }
 
 }
