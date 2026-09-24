@@ -1,0 +1,1091 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f0e6;
+    color: #263526;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(34, 58, 34, 0.96);
+
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    width: 92%;
+    max-width: 1500px;
+
+    min-height: 80px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.logo {
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 28px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #d6b36a;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(20, 35, 20, 0.55),
+            rgba(20, 35, 20, 0.65)
+        ),
+        url("https://upload.wikimedia.org/wikipedia/commons/6/64/Plaza_de_Bolivar%2C_Bogota%2C_Colombia_%285770632336%29.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(24, 45, 27, 0.25);
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    max-width: 1000px;
+
+    padding: 120px 20px 60px;
+}
+
+.hero-label {
+    margin-bottom: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 9vw, 125px);
+
+    line-height: 0.88;
+
+    font-weight: 700;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.hero-subtitle {
+    font-size: 19px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 45px;
+}
+
+.hero-subtitle span {
+    color: #d6b36a;
+
+    margin: 0 10px;
+}
+
+
+/* =========================================
+   BOTONES HERO
+========================================= */
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.hero-button {
+    padding: 16px 27px;
+
+    border: 1px solid white;
+
+    border-radius: 3px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: white;
+
+    color: #29452b;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   ETIQUETAS
+========================================= */
+
+.section-label {
+    color: #b18a43;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   ACERCA DE NOSOTROS
+========================================= */
+
+.about {
+    background-color: #f5f0e6;
+
+    padding: 120px 8%;
+}
+
+.about-content {
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.about h2 {
+    color: #29452b;
+
+    font-size: clamp(40px, 5vw, 68px);
+
+    line-height: 1;
+
+    margin-bottom: 45px;
+
+    max-width: 850px;
+}
+
+.about p:not(.section-label) {
+    color: #5c665b;
+
+    font-size: 17px;
+
+    max-width: 900px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================
+   MAPA GENERAL
+========================================= */
+
+.map-section {
+    background-color: white;
+
+    padding: 110px 6%;
+}
+
+.map-header {
+    max-width: 950px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.map-header h2 {
+    color: #29452b;
+
+    font-size: clamp(35px, 5vw, 60px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.map-header > p:last-child {
+    color: #697067;
+
+    font-size: 17px;
+}
+
+.map-container {
+    width: 100%;
+
+    max-width: 1250px;
+
+    height: 600px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+}
+
+
+/* ==================================================
+   NEGOCIOS Y EMPRENDIMIENTOS
+================================================== */
+
+.businesses {
+    background-color: #f5f0e6;
+
+    padding: 120px 6%;
+}
+
+.businesses-header {
+    max-width: 950px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.businesses-header h2 {
+    color: #29452b;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.businesses-header > p:last-child {
+    color: #697067;
+
+    font-size: 17px;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   SELECTOR DE NEGOCIOS
+========================================= */
+
+.business-selector {
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+.business-selector label {
+    display: block;
+
+    color: #29452b;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.business-selector select {
+    width: 100%;
+
+    height: 55px;
+
+    padding: 0 18px;
+
+    border: 2px solid #d6b36a;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: #29452b;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.business-selector select:focus {
+    border-color: #31572f;
+}
+
+
+/* =========================================
+   TARJETA DEL NEGOCIO
+========================================= */
+
+.business-card {
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+
+    padding: 55px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.10);
+
+    animation: businessAppear 0.4s ease;
+}
+
+@keyframes businessAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   INFORMACIÓN DEL NEGOCIO
+========================================= */
+
+.business-information {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.business-information h3 {
+    color: #29452b;
+
+    font-size: clamp(42px, 5vw, 70px);
+
+    line-height: 0.95;
+
+    margin-bottom: 35px;
+}
+
+.business-information h4 {
+    color: #29452b;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.business-information p {
+    color: #5c665b;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   PRODUCTOS
+========================================= */
+
+.products-section {
+    margin-top: 15px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #ddd;
+}
+
+.product-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+
+    gap: 12px 30px;
+
+    margin-top: 15px;
+
+    padding-left: 20px;
+}
+
+.product-list li {
+    color: #5c665b;
+
+    font-size: 16px;
+
+    padding-left: 5px;
+}
+
+.product-list li::marker {
+    color: #b18a43;
+}
+
+
+/* =========================================
+   BOTÓN PÁGINA OFICIAL
+========================================= */
+
+.official-business {
+    margin-top: 30px;
+}
+
+.official-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 15px 25px;
+
+    background-color: #31572f;
+
+    color: white;
+
+    border: 1px solid #31572f;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.official-button span {
+    font-size: 18px;
+
+    transition: transform 0.3s ease;
+}
+
+.official-button:hover {
+    background-color: #d6b36a;
+
+    border-color: #d6b36a;
+
+    color: #29452b;
+
+    transform: translateY(-3px);
+}
+
+.official-button:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   UBICACIÓN
+========================================= */
+
+.business-location {
+    margin-top: 25px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #ddd;
+}
+
+.business-location h4 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.business-location p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   MAPA DEL NEGOCIO
+========================================= */
+
+.business-map {
+    min-height: 400px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.business-map iframe {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 400px;
+
+    border: none;
+}
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contact {
+    background-color: #31572f;
+
+    min-height: 665px;
+
+    padding: 100px 8%;
+
+    color: white;
+}
+
+.contact-content {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.contact-star {
+    color: #d6b36a;
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.contact .section-label {
+    color: #d6b36a;
+}
+
+.contact h2 {
+    font-size: clamp(45px, 6vw, 80px);
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.contact-intro {
+    max-width: 700px;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 50px;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.contact-form {
+    width: 100%;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+
+    margin-bottom: 35px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+
+    background: transparent;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-bottom-color: #d6b36a;
+}
+
+.form-group select option {
+    color: #222;
+}
+
+
+/* =========================================
+   TELÉFONO
+========================================= */
+
+.phone-input {
+    display: flex;
+
+    align-items: center;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.phone-input input {
+    border-bottom: none;
+}
+
+.phone-input select {
+    width: 80px;
+
+    border-bottom: none;
+
+    padding: 0 5px;
+}
+
+.country-icon {
+    font-size: 18px;
+
+    margin-right: 10px;
+}
+
+
+/* =========================================
+   BOTÓN ENVIAR
+========================================= */
+
+.button-group {
+    justify-content: flex-end;
+}
+
+.send-button {
+    width: 180px;
+
+    height: 55px;
+
+    border: 1px solid white;
+
+    border-radius: 3px;
+
+    background: white;
+
+    color: #31572f;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: transparent;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #1e351f;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        width: 94%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .business-card {
+        padding: 40px;
+
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET PEQUEÑA
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 15px 0;
+
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .header {
+        position: absolute;
+    }
+
+    .business-card {
+        grid-template-columns: 1fr;
+    }
+
+    .business-map {
+        min-height: 400px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        min-height: 100px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        gap: 10px 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .hero-button {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+    .about {
+        padding: 80px 7%;
+    }
+
+    .map-section {
+        padding: 80px 5%;
+    }
+
+    .map-container {
+        height: 450px;
+
+        border-radius: 12px;
+    }
+
+    .businesses {
+        padding: 80px 5%;
+    }
+
+    .business-selector {
+        padding: 25px;
+    }
+
+    .business-card {
+        padding: 30px 25px;
+
+        border-radius: 15px;
+    }
+
+    .business-information h3 {
+        font-size: 48px;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .official-button {
+        width: 100%;
+    }
+
+    .business-map {
+        min-height: 350px;
+
+        border-radius: 10px;
+    }
+
+    .business-map iframe {
+        min-height: 350px;
+    }
+
+    .contact {
+        padding: 80px 7%;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .button-group {
+        justify-content: flex-start;
+    }
+
+    .send-button {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULAR PEQUEÑO
+========================================= */
+
+@media (max-width: 480px) {
+
+    .hero-content {
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+    .hero-label {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .business-information h3 {
+        font-size: 40px;
+    }
+
+    .business-card {
+        padding: 25px 18px;
+    }
+
+    .business-information p {
+        font-size: 15px;
+    }
+
+    .official-button {
+        padding: 14px 18px;
+    }
+
+}
